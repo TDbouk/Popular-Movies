@@ -42,13 +42,23 @@ public class MainActivity extends AppCompatActivity {
     private RecyclerView.LayoutManager layoutManager;
     private RecyclerView.Adapter adapter;
     private Spinner sortBySpinner;
+    private ProgressDialog progressDialog;
+    private boolean isSpinnerPositionChnaged = true;
 
     @Override
     public void onSaveInstanceState(Bundle savedInstanceState) {
         // Save the current gridlayout position
         int firstVisiblePosition = ((GridLayoutManager) layoutManager).findFirstVisibleItemPosition();
         savedInstanceState.putInt("first_visible_item_position", firstVisiblePosition);
+        savedInstanceState.putInt("saved_spinner_item_position", sortBySpinner.getSelectedItemPosition());
         super.onSaveInstanceState(savedInstanceState);
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        if (progressDialog != null && progressDialog.isShowing())
+            progressDialog.dismiss();
     }
 
     @Override
@@ -56,6 +66,9 @@ public class MainActivity extends AppCompatActivity {
         super.onRestoreInstanceState(savedInstanceState);
         // Restore the saved gridlayout position
         int firstVisiblePosition = savedInstanceState.getInt("first_visible_item_position");
+        if (savedInstanceState.getInt("saved_spinner_item_position") != 0) {
+            isSpinnerPositionChnaged = false;
+        }
         layoutManager.scrollToPosition(firstVisiblePosition);
     }
 
@@ -63,13 +76,18 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        progressDialog = new ProgressDialog(MainActivity.this);
         moviesGridView = (RecyclerView) findViewById(R.id.movies);
         sortBySpinner = (Spinner) findViewById(R.id.sort_by_spinner);
+
         sortBySpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
-                fetchMovies(i);
+                if (isSpinnerPositionChnaged) {
+                    fetchMovies(i);
+                } else {
+                    isSpinnerPositionChnaged = true;
+                }
             }
 
             @Override
@@ -77,13 +95,10 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+
         layoutManager = new GridLayoutManager(this, 4);
         moviesGridView.setLayoutManager(layoutManager);
 
-        // Only fetch data when the activity is recreated
-        if (savedInstanceState == null) {
-            fetchMovies(sortBySpinner.getSelectedItemPosition());
-        }
     }
 
     /**
@@ -159,13 +174,11 @@ public class MainActivity extends AppCompatActivity {
 
     class FetchPopularMoviesTask extends AsyncTask<String, Void, ArrayList<Movie>> {
 
-        ProgressDialog progressDialog = null;
         String sortBy;
 
         @Override
         protected void onPreExecute() {
             super.onPreExecute();
-            progressDialog = new ProgressDialog(MainActivity.this);
             progressDialog.setTitle("Loading...");
             progressDialog.show();
         }
@@ -246,7 +259,7 @@ public class MainActivity extends AppCompatActivity {
 
             try {
                 Uri builtUri = Uri.parse(Constants.MOVIE_DB_BASE_URL).buildUpon()
-                        .appendQueryParameter(Constants.SORT_PARAM, sortBy)
+                        .appendPath(sortBy)
                         .appendQueryParameter(Constants.APIKEY_PARAM, apiKey).build();
 
                 URL url = new URL(builtUri.toString());

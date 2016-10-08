@@ -10,7 +10,7 @@ public class Constants {
     public static final String INTENT_MOVIE = "intent_movie_key";
 
     // MovieDB query parameters
-    public static final String MOVIE_DB_BASE_URL = "https://api.themoviedb.org/3/discover/movie?";
+    public static final String MOVIE_DB_BASE_URL = "https://api.themoviedb.org/3/movie";
     public static final String SORT_PARAM = "sort_by";
     public static final String APIKEY_PARAM = "api_key";
 
