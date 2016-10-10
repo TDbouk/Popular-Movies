@@ -10,34 +10,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="941dd204-7c3b-4344-91ef-bd191fa13deb" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/animated_vector_drawable_24_2_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/appcompat_v7_24_2_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/espresso_core_2_2_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/espresso_idling_resource_2_2_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/exposed_instrumentation_api_publish_0_5.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/hamcrest_core_1_3.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/hamcrest_integration_1_3.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/hamcrest_library_1_3.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/javawriter_2_1_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/javax_annotation_api_1_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/javax_inject_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/jsr305_2_0_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/junit_4_12.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/picasso_2_5_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/recyclerview_v7_24_2_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/rules_0_5.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/runner_0_5.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/support_annotations_24_2_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/support_compat_24_2_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/support_core_ui_24_2_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/support_core_utils_24_2_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/support_fragment_24_2_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/support_media_compat_24_2_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/support_v4_24_2_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/support_vector_drawable_24_2_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/res/menu/menu_main.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/generated/mockable-android-24.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/cache.properties.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileHashes.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileSnapshots.bin" />
@@ -45,17 +17,10 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/taskArtifacts.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" afterPath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" afterPath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.bin" afterPath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" afterPath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/model/Constants.java" afterPath="$PROJECT_DIR$/app/src/main/java/model/Constants.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/tdbouk/udacity/popularmovies/MainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/tdbouk/udacity/popularmovies/MainActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_movie_detail.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_movie_detail.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_movies.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_movies.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gradle.properties" afterPath="$PROJECT_DIR$/gradle.properties" />
     </list>
     <ignored path="PopularMovies.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -86,72 +51,7 @@
           <activation />
         </task>
         <projects_view>
-          <tree_state>
-            <PATH>
-              <PATH_ELEMENT>
-                <option name="myItemId" value="" />
-                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ExternalProjectsStructure$RootNode" />
-              </PATH_ELEMENT>
-              <PATH_ELEMENT>
-                <option name="myItemId" value="PopularMovies" />
-                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ProjectNode" />
-              </PATH_ELEMENT>
-              <PATH_ELEMENT>
-                <option name="myItemId" value=":app" />
-                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ModuleNode" />
-              </PATH_ELEMENT>
-            </PATH>
-            <PATH>
-              <PATH_ELEMENT>
-                <option name="myItemId" value="" />
-                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ExternalProjectsStructure$RootNode" />
-              </PATH_ELEMENT>
-              <PATH_ELEMENT>
-                <option name="myItemId" value="PopularMovies" />
-                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ProjectNode" />
-              </PATH_ELEMENT>
-              <PATH_ELEMENT>
-                <option name="myItemId" value=":app" />
-                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ModuleNode" />
-              </PATH_ELEMENT>
-              <PATH_ELEMENT>
-                <option name="myItemId" value="Tasks" />
-                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.TasksNode" />
-              </PATH_ELEMENT>
-            </PATH>
-            <PATH>
-              <PATH_ELEMENT>
-                <option name="myItemId" value="" />
-                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ExternalProjectsStructure$RootNode" />
-              </PATH_ELEMENT>
-              <PATH_ELEMENT>
-                <option name="myItemId" value="PopularMovies" />
-                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ProjectNode" />
-              </PATH_ELEMENT>
-              <PATH_ELEMENT>
-                <option name="myItemId" value=":app" />
-                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ModuleNode" />
-              </PATH_ELEMENT>
-              <PATH_ELEMENT>
-                <option name="myItemId" value="Tasks" />
-                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.TasksNode" />
-              </PATH_ELEMENT>
-              <PATH_ELEMENT>
-                <option name="myItemId" value="build" />
-                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.TasksNode$1" />
-              </PATH_ELEMENT>
-            </PATH>
-            <PATH>
-              <PATH_ELEMENT>
-                <option name="myItemId" value="" />
-                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ExternalProjectsStructure$RootNode" />
-              </PATH_ELEMENT>
-              <PATH_ELEMENT>
-                <option name="myItemId" value="PopularMovies" />
-                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ProjectNode" />
-              </PATH_ELEMENT>
-            </PATH>
-          </tree_state>
+          <tree_state />
         </projects_view>
       </state>
     </system>
@@ -165,7 +65,33 @@
         <entry file="file://$PROJECT_DIR$/gradle.properties">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="330">
-              <caret line="15" column="14" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
+              <caret line="15" column="28" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/tdbouk/udacity/popularmovies/MainActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="155">
+              <caret line="68" column="10" selection-start-line="68" selection-start-column="9" selection-end-line="68" selection-end-column="10" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#onPause#0;class#MainActivity#0" expanded="false" />
+                <element signature="e#6413#6414#0" expanded="true" />
+                <element signature="e#6457#6458#0" expanded="true" />
+                <element signature="method#makeMovieDetailIntent#0;class#MyAdapter#0;class#MainActivity#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MovieDetail.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/tdbouk/udacity/popularmovies/MovieDetail.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="286">
+              <caret line="22" column="73" selection-start-line="22" selection-start-column="73" selection-end-line="22" selection-end-column="73" />
               <folding />
             </state>
           </provider>
@@ -1872,8 +1798,8 @@
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_movie_detail.xml" />
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/model/SortSpinner.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/tdbouk/udacity/popularmovies/MainActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/tdbouk/udacity/popularmovies/MainActivity.java" />
         <option value="$PROJECT_DIR$/gradle.properties" />
       </list>
     </option>
@@ -2078,7 +2004,7 @@
       <recent name="D:\Programming-workspace\android\Udacity-Android\PopularMovies\app\src\main\res\drawable" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.PopularMovies:app [clean]">
+  <component name="RunManager" selected="Android App.app">
     <configuration default="false" name="PopularMovies:app [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -2415,8 +2341,8 @@
     </list>
     <recent_temporary>
       <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="Gradle.PopularMovies [clean]" />
-        <item index="1" class="java.lang.String" itemvalue="Gradle.PopularMovies:app [clean]" />
+        <item index="0" class="java.lang.String" itemvalue="Gradle.PopularMovies:app [clean]" />
+        <item index="1" class="java.lang.String" itemvalue="Gradle.PopularMovies [clean]" />
         <item index="2" class="java.lang.String" itemvalue="Gradle.PopularMovies:app [build]" />
       </list>
     </recent_temporary>
@@ -2450,13 +2376,13 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="0" width="1924" height="1048" extended-state="1" />
+    <frame x="-9" y="0" width="1924" height="1048" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3697183" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3697183" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -2469,13 +2395,13 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3286385" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286385" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32942554" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20454545" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -2556,9 +2482,9 @@
             <element signature="method#onPause#0;class#MainActivity#0" expanded="false" />
             <element signature="method#onRestoreInstanceState#0;class#MainActivity#0" expanded="false" />
             <element signature="method#onCreate#0;class#MainActivity#0" expanded="false" />
-            <element signature="class#2939:3408" expanded="false" />
-            <element signature="method#onItemSelected#0;class#2939:3408" expanded="false" />
-            <element signature="method#onNothingSelected#0;class#2939:3408" expanded="false" />
+            <element signature="class#3500:3951" expanded="false" />
+            <element signature="method#onItemSelected#0;class#3500:3951" expanded="false" />
+            <element signature="method#onNothingSelected#0;class#3500:3951" expanded="false" />
             <element signature="docComment;method#fetchMovies#0;class#MainActivity#0" expanded="false" />
             <element signature="method#fetchMovies#0;class#MainActivity#0" expanded="false" />
             <element signature="class#MyAdapter#0;class#MainActivity#0" expanded="false" />
@@ -2627,9 +2553,9 @@
             <element signature="method#onPause#0;class#MainActivity#0" expanded="false" />
             <element signature="method#onRestoreInstanceState#0;class#MainActivity#0" expanded="false" />
             <element signature="method#onCreate#0;class#MainActivity#0" expanded="false" />
-            <element signature="class#2939:3408" expanded="false" />
-            <element signature="method#onItemSelected#0;class#2939:3408" expanded="false" />
-            <element signature="method#onNothingSelected#0;class#2939:3408" expanded="false" />
+            <element signature="class#3500:3951" expanded="false" />
+            <element signature="method#onItemSelected#0;class#3500:3951" expanded="false" />
+            <element signature="method#onNothingSelected#0;class#3500:3951" expanded="false" />
             <element signature="docComment;method#fetchMovies#0;class#MainActivity#0" expanded="false" />
             <element signature="method#fetchMovies#0;class#MainActivity#0" expanded="false" />
             <element signature="class#MyAdapter#0;class#MainActivity#0" expanded="false" />
@@ -2690,9 +2616,9 @@
             <element signature="method#onPause#0;class#MainActivity#0" expanded="false" />
             <element signature="method#onRestoreInstanceState#0;class#MainActivity#0" expanded="false" />
             <element signature="method#onCreate#0;class#MainActivity#0" expanded="false" />
-            <element signature="class#2939:3408" expanded="false" />
-            <element signature="method#onItemSelected#0;class#2939:3408" expanded="false" />
-            <element signature="method#onNothingSelected#0;class#2939:3408" expanded="false" />
+            <element signature="class#3500:3951" expanded="false" />
+            <element signature="method#onItemSelected#0;class#3500:3951" expanded="false" />
+            <element signature="method#onNothingSelected#0;class#3500:3951" expanded="false" />
             <element signature="docComment;method#fetchMovies#0;class#MainActivity#0" expanded="false" />
             <element signature="method#fetchMovies#0;class#MainActivity#0" expanded="false" />
             <element signature="class#MyAdapter#0;class#MainActivity#0" expanded="false" />
@@ -2763,9 +2689,9 @@
             <element signature="method#onPause#0;class#MainActivity#0" expanded="false" />
             <element signature="method#onRestoreInstanceState#0;class#MainActivity#0" expanded="false" />
             <element signature="method#onCreate#0;class#MainActivity#0" expanded="false" />
-            <element signature="class#2939:3408" expanded="false" />
-            <element signature="method#onItemSelected#0;class#2939:3408" expanded="false" />
-            <element signature="method#onNothingSelected#0;class#2939:3408" expanded="false" />
+            <element signature="class#3500:3951" expanded="false" />
+            <element signature="method#onItemSelected#0;class#3500:3951" expanded="false" />
+            <element signature="method#onNothingSelected#0;class#3500:3951" expanded="false" />
             <element signature="docComment;method#fetchMovies#0;class#MainActivity#0" expanded="false" />
             <element signature="method#fetchMovies#0;class#MainActivity#0" expanded="false" />
             <element signature="class#MyAdapter#0;class#MainActivity#0" expanded="false" />
@@ -2821,22 +2747,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
           <caret line="12" column="48" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/model/Movie.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="12" column="30" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/tdbouk/udacity/popularmovies/MovieDetail.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="22" column="73" selection-start-line="22" selection-start-column="73" selection-end-line="22" selection-end-column="73" />
           <folding />
         </state>
       </provider>
@@ -2939,33 +2849,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/model/Movie.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="12" column="30" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/tdbouk/udacity/popularmovies/MovieDetail.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="22" column="73" selection-start-line="22" selection-start-column="73" selection-end-line="22" selection-end-column="73" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/tdbouk/udacity/popularmovies/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="300" column="1" selection-start-line="300" selection-start-column="1" selection-end-line="300" selection-end-column="1" />
+        <state relative-caret-position="155">
+          <caret line="68" column="10" selection-start-line="68" selection-start-column="9" selection-end-line="68" selection-end-column="10" />
           <folding>
-            <element signature="method#onSaveInstanceState#0;class#MainActivity#0" expanded="false" />
+            <element signature="imports" expanded="true" />
             <element signature="method#onPause#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#onRestoreInstanceState#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#onCreate#0;class#MainActivity#0" expanded="false" />
-            <element signature="class#2939:3408" expanded="false" />
-            <element signature="method#onItemSelected#0;class#2939:3408" expanded="false" />
-            <element signature="method#onNothingSelected#0;class#2939:3408" expanded="false" />
-            <element signature="docComment;method#fetchMovies#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#fetchMovies#0;class#MainActivity#0" expanded="false" />
-            <element signature="class#MyAdapter#0;class#MainActivity#0" expanded="false" />
-            <element signature="class#ViewHolder#0;class#MyAdapter#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#ViewHolder#0;class#ViewHolder#0;class#MyAdapter#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#MyAdapter#0;class#MyAdapter#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#onCreateViewHolder#0;class#MyAdapter#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#onBindViewHolder#0;class#MyAdapter#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#6413#6414#0" expanded="true" />
+            <element signature="e#6457#6458#0" expanded="true" />
             <element signature="method#makeMovieDetailIntent#0;class#MyAdapter#0;class#MainActivity#0" expanded="false" />
-            <element signature="class#FetchPopularMoviesTask#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#onPreExecute#0;class#FetchPopularMoviesTask#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#onPostExecute#0;class#FetchPopularMoviesTask#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#doInBackground#0;class#FetchPopularMoviesTask#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#generateTheMobieDbUrl#0;class#FetchPopularMoviesTask#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#getMovies#0;class#FetchPopularMoviesTask#0;class#MainActivity#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2973,7 +2882,7 @@
     <entry file="file://$PROJECT_DIR$/gradle.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
-          <caret line="15" column="14" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
+          <caret line="15" column="28" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
           <folding />
         </state>
       </provider>

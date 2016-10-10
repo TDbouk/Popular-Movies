@@ -17,6 +17,7 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ImageButton;
 import android.widget.Spinner;
+import android.widget.Toast;
 
 import com.squareup.picasso.Picasso;
 
@@ -43,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
     private RecyclerView.Adapter adapter;
     private Spinner sortBySpinner;
     private ProgressDialog progressDialog;
-    private boolean isSpinnerPositionChnaged = true;
+    private ArrayList<Movie> moviesList;
 
     @Override
     public void onSaveInstanceState(Bundle savedInstanceState) {
@@ -51,6 +52,7 @@ public class MainActivity extends AppCompatActivity {
         int firstVisiblePosition = ((GridLayoutManager) layoutManager).findFirstVisibleItemPosition();
         savedInstanceState.putInt("first_visible_item_position", firstVisiblePosition);
         savedInstanceState.putInt("saved_spinner_item_position", sortBySpinner.getSelectedItemPosition());
+        savedInstanceState.putParcelableArrayList("saved_list_of_movies", moviesList);
         super.onSaveInstanceState(savedInstanceState);
     }
 
@@ -66,10 +68,15 @@ public class MainActivity extends AppCompatActivity {
         super.onRestoreInstanceState(savedInstanceState);
         // Restore the saved gridlayout position
         int firstVisiblePosition = savedInstanceState.getInt("first_visible_item_position");
-        if (savedInstanceState.getInt("saved_spinner_item_position") != 0) {
-            isSpinnerPositionChnaged = false;
+        int savedSpinnerPosition = savedInstanceState.getInt("saved_spinner_item_position");
+        sortBySpinner.setSelection(savedSpinnerPosition);
+        sortBySpinner.setTag(savedSpinnerPosition);
+        moviesList = savedInstanceState.getParcelableArrayList("saved_list_of_movies");
+        if (moviesList.size() > 0) {
+            adapter = new MyAdapter(moviesList, MainActivity.this);
+            moviesGridView.setAdapter(adapter);
+            layoutManager.scrollToPosition(firstVisiblePosition);
         }
-        layoutManager.scrollToPosition(firstVisiblePosition);
     }
 
     @Override
@@ -80,13 +87,17 @@ public class MainActivity extends AppCompatActivity {
         moviesGridView = (RecyclerView) findViewById(R.id.movies);
         sortBySpinner = (Spinner) findViewById(R.id.sort_by_spinner);
 
+        // allow fetching movies when the app first starts
+        sortBySpinner.setSelection(0);
+        sortBySpinner.setTag(1);
+
         sortBySpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
-                if (isSpinnerPositionChnaged) {
+
+                // don't fetch movies on rotation
+                if ((int) sortBySpinner.getTag() != i) {
                     fetchMovies(i);
-                } else {
-                    isSpinnerPositionChnaged = true;
                 }
             }
 
@@ -112,6 +123,8 @@ public class MainActivity extends AppCompatActivity {
         NetworkInfo netInfo = cm.getActiveNetworkInfo();
         if (netInfo != null && netInfo.isConnectedOrConnecting())
             new FetchPopularMoviesTask().execute(getResources().getStringArray(R.array.list_preference_entry_values)[sortOrder]);
+        else
+            Toast.makeText(this, "Internet Connection is Required.", Toast.LENGTH_SHORT).show();
     }
 
     class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
@@ -188,7 +201,8 @@ public class MainActivity extends AppCompatActivity {
             super.onPostExecute(movies);
 
             if (movies != null) {
-                adapter = new MyAdapter(movies, MainActivity.this);
+                moviesList = movies;
+                adapter = new MyAdapter(moviesList, MainActivity.this);
                 moviesGridView.setAdapter(adapter);
             }
             progressDialog.dismiss();
