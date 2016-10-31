@@ -6,15 +6,35 @@
     <string name="pref_title_sort_by">Sort Movies By</string>
     <string name="pref_title_default">popularity.desc</string>
     <string name="pref_title_sort_by_key" translatable="false">sort by</string>
+    <string name="favorite_unchecked">Uncheck as Favorite</string>
+    <string name="favorite_checked">Check as Favorite</string>
+    <string name="review">Review </string>
+    <string name="reviews">Reviews </string>
+    <string name="trailer">Trailer </string>
+    <string name="trailers">Trailers </string>
+    <string name="watch_trailers">Watch Trailers</string>
+    <string name="read_reviews">Read Reviews</string>
+    <string name="share">Share </string>
+    <string name="ab_spinner">Sort By </string>
+
+
+    <!-- SyncAdapter related -->
+    <string name="sync_account_type">tdbouk.udacity.popularmovies</string>
+    <string name="content_authority">tdbouk.udacity.popularmovies</string>
 
     <string-array name="list_preference_entries">
         <item>Popular Movies</item>
         <item>Highest Rated</item>
+        <item>My Favorites</item>
     </string-array>
 
     <string-array name="list_preference_entry_values">
         <item>popular</item>
         <item>top_rated</item>
+        <item>my_favorites</item>
     </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>
