@@ -2,15 +2,12 @@ package tdbouk.udacity.popularmovies;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.view.Menu;
-import android.view.View;
 
 import tdbouk.udacity.popularmovies.data.Movie;
 import tdbouk.udacity.popularmovies.data.Utility;
 import tdbouk.udacity.popularmovies.sync.PopularMoviesSyncAdapter;
 
 public class MainActivity extends AppCompatActivity implements MoviesFragment.OnFragmentInteractionListener {
-
 
     private DetailFragment fragment;
     private boolean mTwoPane;
@@ -80,11 +77,6 @@ public class MainActivity extends AppCompatActivity implements MoviesFragment.On
                     .replace(R.id.movie_detail_container, fragment, DETAILFRAGMENT_TAG)
                     .commit();
         }
-    }
-
-
-    public void onClick(View view) {
-        fragment.onClick(view);
     }
 
 }

@@ -3,7 +3,6 @@ package tdbouk.udacity.popularmovies;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.view.View;
 
 import tdbouk.udacity.popularmovies.data.Constants;
 import tdbouk.udacity.popularmovies.data.Movie;
@@ -37,10 +36,4 @@ public class DetailActivity extends AppCompatActivity {
             }
         }
     }
-
-    public void onClick(View view) {
-        fragment.onClick(view);
-    }
-
-
 }

@@ -23,7 +23,8 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageButton;
 import android.widget.Spinner;
 
-import com.squareup.picasso.Picasso;
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.load.engine.DiskCacheStrategy;
 
 import tdbouk.udacity.popularmovies.data.Movie;
 import tdbouk.udacity.popularmovies.data.MovieContract;
@@ -249,7 +250,12 @@ public class MoviesFragment extends Fragment implements LoaderManager.LoaderCall
             if (mGridviewItemSelectedPosition == -1 && position == 0)
                 setDefaultView(movie);
 
-            Picasso.with(mContext).load("https://image.tmdb.org/t/p/w185/" + movie.getPosterPath()).into(holder.mImageButton);
+            Glide.with(mContext)
+                    .load("https://image.tmdb.org/t/p/w185/" + movie.getPosterPath())
+                    .diskCacheStrategy(DiskCacheStrategy.ALL)
+                    .placeholder(R.mipmap.ic_launcher)
+                    .crossFade()
+                    .into(holder.mImageButton);
 
             holder.mImageButton.setOnClickListener(new View.OnClickListener() {
                 @Override

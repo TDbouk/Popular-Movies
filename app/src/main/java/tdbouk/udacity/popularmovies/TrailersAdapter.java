@@ -41,7 +41,9 @@ public class TrailersAdapter extends ArrayAdapter<String> {
         }
 
         final ViewHolder viewHolder = (ViewHolder) convertView.getTag();
-        viewHolder.trailer.setText(R.string.trailer + (position + 1));
+        String trailerTitle = getContext().getString(R.string.trailer)
+                .concat(Integer.toString(position + 1));
+        viewHolder.trailer.setText(trailerTitle);
 
         convertView.setOnClickListener(new View.OnClickListener() {
             @Override

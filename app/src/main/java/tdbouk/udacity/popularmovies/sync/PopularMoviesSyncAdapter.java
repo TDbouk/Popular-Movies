@@ -40,9 +40,6 @@ public class PopularMoviesSyncAdapter extends AbstractThreadedSyncAdapter {
     // 60 seconds (1 minute) * 180 = 3 hours
     public static final int SYNC_INTERVAL = 60 * 180;
     public static final int SYNC_FLEXTIME = SYNC_INTERVAL / 3;
-    private static final long DAY_IN_MILLIS = 1000 * 60 * 60 * 24;
-    private static final int WEATHER_NOTIFICATION_ID = 3004;
-
 
     public PopularMoviesSyncAdapter(Context context, boolean autoInitialize) {
         super(context, autoInitialize);
@@ -96,7 +93,6 @@ public class PopularMoviesSyncAdapter extends AbstractThreadedSyncAdapter {
                 return null;
             }
             moviesJsonStr = buffer.toString();
-//            getMoviesDataFromJson(moviesJsonStr);
             return moviesJsonStr;
 
         } catch (IOException e) {
@@ -181,14 +177,17 @@ public class PopularMoviesSyncAdapter extends AbstractThreadedSyncAdapter {
             URL movieTrailerUrl = generateMovieTrailerUrl(movieId);
             String trailerJsonStr = openConnectionToUrl(movieTrailerUrl);
 
+            if (null == trailerJsonStr)
+                return -1;
+
             JSONObject trailerJson = new JSONObject(trailerJsonStr);
             JSONArray trailersArray = trailerJson.getJSONArray(Constants.MOVIE_LIST);
             Vector<ContentValues> trailersCvVector = new Vector<ContentValues>(trailersArray.length());
 
             for (int j = 0; j < trailersArray.length(); j++) {
 
-                JSONObject trailerJasonObject = trailersArray.getJSONObject(j);
-                String key = trailerJasonObject.getString(Constants.MOVIE_YOUTUBE_KEY);
+                JSONObject trailerJsonObject = trailersArray.getJSONObject(j);
+                String key = trailerJsonObject.getString(Constants.MOVIE_YOUTUBE_KEY);
                 ContentValues trailerValues = new ContentValues();
                 trailerValues.put(MovieContract.TrailerEntry.COLUMN_MOVIE_ID, movieId);
                 trailerValues.put(MovieContract.TrailerEntry.COLUMN_MOVIE_TRAILER, key);
@@ -212,14 +211,17 @@ public class PopularMoviesSyncAdapter extends AbstractThreadedSyncAdapter {
             URL movieReviewUrl = generateMovieReviewUrl(movieId);
             String reviewJsonStr = openConnectionToUrl(movieReviewUrl);
 
+            if (null == reviewJsonStr)
+                return -1;
+
             JSONObject reviewJson = new JSONObject(reviewJsonStr);
             JSONArray reviewArray = reviewJson.getJSONArray(Constants.MOVIE_LIST);
             Vector<ContentValues> reviewsCvVector = new Vector<ContentValues>(reviewArray.length());
 
             for (int j = 0; j < reviewArray.length(); j++) {
 
-                JSONObject reviewJasonObject = reviewArray.getJSONObject(j);
-                String content = reviewJasonObject.getString(Constants.MOVIE_REVIEW);
+                JSONObject reviewJsonObject = reviewArray.getJSONObject(j);
+                String content = reviewJsonObject.getString(Constants.MOVIE_REVIEW);
                 ContentValues reviewValues = new ContentValues();
                 reviewValues.put(MovieContract.ReviewEntry.COLUMN_MOVIE_ID, movieId);
                 reviewValues.put(MovieContract.ReviewEntry.COLUMN_MOVIE_REVIEW, content);

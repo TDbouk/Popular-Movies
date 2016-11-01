@@ -70,10 +70,11 @@
 
                 <ImageView
                     android:id="@+id/image_movie_poster"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_margin="15dp" />
+                    android:layout_margin="15dp"
+                    android:layout_weight="1" />
 
                 <LinearLayout
                     android:layout_width="0dp"
@@ -87,7 +88,6 @@
                         android:layout_height="wrap_content"
                         android:background="@color/colorPrimary"
                         android:drawableLeft="@android:drawable/btn_star_big_off"
-                        android:onClick="onClick"
                         android:padding="10dp"
                         android:text="@string/favorite_checked"
                         android:textColor="@color/lightPrimaryColor" />
@@ -100,7 +100,6 @@
                         android:layout_marginTop="15dp"
                         android:background="@color/colorPrimary"
                         android:drawableLeft="@android:drawable/ic_media_play"
-                        android:onClick="onClick"
                         android:padding="10dp"
                         android:text="@string/watch_trailers"
                         android:textColor="@color/lightPrimaryColor" />
@@ -111,7 +110,6 @@
                         android:layout_height="wrap_content"
                         android:background="@color/colorPrimary"
                         android:drawableLeft="@android:drawable/sym_action_chat"
-                        android:onClick="onClick"
                         android:padding="10dp"
                         android:text="@string/read_reviews"
                         android:textColor="@color/lightPrimaryColor" />

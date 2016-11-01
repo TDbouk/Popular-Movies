@@ -36,14 +36,15 @@ public class ReviewsAdapter extends ArrayAdapter<String> {
         }
 
         final ViewHolder viewHolder = (ViewHolder) convertView.getTag();
-        viewHolder.review.setText(R.string.review + (position + 1));
+        String reviewTitle = getContext().getString(R.string.review)
+                .concat(Integer.toString(position + 1));
+        viewHolder.review.setText(reviewTitle);
 
         convertView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 // Build the intent
                 String review = reviewsList.get(position);
-                // TODO:: open activity to view review
                 if (viewHolder.reviewDescription.getText().toString().isEmpty())
                     viewHolder.reviewDescription.setText(review);
                 else viewHolder.reviewDescription.setText("");

@@ -21,7 +21,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.squareup.picasso.Picasso;
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.load.engine.DiskCacheStrategy;
 
 import java.util.ArrayList;
 
@@ -36,6 +37,8 @@ public class DetailFragment extends android.support.v4.app.Fragment {
     private TextView mTextViewReleaseDate;
     private ImageView mImageViewPoster;
     private Button mButtonFavorites;
+    private Button mButtonReviews;
+    private Button mButtonTrailers;
     private TrailersDialogFragment mDialogFragmentTrailers;
     private ReviewsDialogFragment mDialogFragmentReviews;
     private ArrayList<String> Trailerslist = new ArrayList<>();
@@ -90,6 +93,8 @@ public class DetailFragment extends android.support.v4.app.Fragment {
         mTextViewReleaseDate = (TextView) rootView.findViewById(R.id.text_movie_release_date);
         mImageViewPoster = (ImageView) rootView.findViewById(R.id.image_movie_poster);
         mButtonFavorites = (Button) rootView.findViewById(R.id.button_movie_favorite);
+        mButtonReviews = (Button) rootView.findViewById(R.id.button_movie_reviews);
+        mButtonTrailers = (Button) rootView.findViewById(R.id.button_movie_trailer);
 
         if (arguments != null) {
             mMovie = arguments.getParcelable(DetailFragment.DETAIL_MOVIE);
@@ -98,23 +103,10 @@ public class DetailFragment extends android.support.v4.app.Fragment {
             mTextViewOverview.setText(mMovie.getOverview());
             mTextViewRating.setText(mMovie.getRating() + "/10");
             mTextViewReleaseDate.setText(mMovie.getReleaseDate());
-            Picasso.with(getActivity()).load("https://image.tmdb.org/t/p/w500/" + mMovie.getPosterPath()).into(mImageViewPoster);
-
-         /*   Picasso.with(getActivity())
+            Glide.with(this)
                     .load("https://image.tmdb.org/t/p/w500/" + mMovie.getPosterPath())
-                    .networkPolicy(NetworkPolicy.OFFLINE)
-                    .into(mImageViewPoster, new Callback() {
-                        @Override
-                        public void onSuccess() {
-
-                        }
-
-                        @Override
-                        public void onError() {
-                            Picasso.with(getActivity()).load("https://image.tmdb.org/t/p/w500/" +
-                                    mMovie.getPosterPath()).into(mImageViewPoster);
-                        }
-                    });*/
+                    .diskCacheStrategy(DiskCacheStrategy.SOURCE)
+                    .into(mImageViewPoster);
 
             getMovieTrailer(mMovie.getId());
             getMovieReview(mMovie.getId());
@@ -132,14 +124,15 @@ public class DetailFragment extends android.support.v4.app.Fragment {
                 mButtonFavorites.setTag("uncheked");
             }
         }
+        setClickListeners();
 
         return rootView;
     }
 
-    public void onClick(View view) {
-        int viewId = view.getId();
-        switch (viewId) {
-            case R.id.button_movie_favorite: {
+    private void setClickListeners() {
+        mButtonFavorites.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
                 if ("checked".equals(view.getTag())) {
                     deleteMovieFromFavorites(mMovie.getId());
                     view.setTag("unchecked");
@@ -149,24 +142,28 @@ public class DetailFragment extends android.support.v4.app.Fragment {
                     view.setTag("checked");
                     ((Button) view).setText(R.string.favorite_unchecked);
                 }
-                break;
             }
-            case R.id.button_movie_trailer:
+        });
+
+        mButtonTrailers.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
                 showTrailersList();
-                break;
-            case R.id.button_movie_reviews:
+            }
+        });
+
+        mButtonReviews.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
                 showReviewsList();
-                break;
-            default:
-                break;
-        }
+            }
+        });
     }
 
     private void saveToFavorites(Movie movie) {
         if (movie != null) {
             String id = movie.getId();
             String overview = movie.getOverview();
-            // TODO :: save poster to sd card and then path on sdcard in db
             String poster = movie.getPosterPath();
             String rating = movie.getRating();
             String releaseDate = movie.getReleaseDate();
