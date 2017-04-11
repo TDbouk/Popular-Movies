@@ -49,7 +49,8 @@ public class PopularMoviesSyncAdapter extends AbstractThreadedSyncAdapter {
     public void onPerformSync(Account account, Bundle extras, String authority, ContentProviderClient provider, SyncResult syncResult) {
         try {
             String sortBy = Utility.getSortBy(getContext());
-            if (!sortBy.equals(getContext().getResources().getStringArray(R.array.list_preference_entry_values)[2])) {
+            if (!sortBy.equals(getContext().getResources()
+                    .getStringArray(R.array.list_preference_entry_values)[2])) {
 
                 getContext().getContentResolver().delete(MovieContract.MovieEntry.CONTENT_URI, null, null);
                 getContext().getContentResolver().delete(MovieContract.TrailerEntry.CONTENT_URI, null, null);

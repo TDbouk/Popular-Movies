@@ -11,7 +11,6 @@ import android.support.v4.content.Loader;
 import android.support.v4.view.MenuItemCompat;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -169,7 +168,11 @@ public class MoviesFragment extends Fragment implements LoaderManager.LoaderCall
         Cursor c = getActivity().getContentResolver().query(MovieContract.FavoriteEntry.CONTENT_URI,
                 MOVIE_PROJECTION, null, null, null);
         if (c.getCount() > 0) {
-            ((MyAdapter) adapter).swapCursor(c);
+            Cursor cursor = ((MyAdapter) adapter).swapCursor(c);
+            if (cursor != null) {
+                cursor.close();
+            }
+
         }
     }
 
@@ -190,7 +193,11 @@ public class MoviesFragment extends Fragment implements LoaderManager.LoaderCall
         // reset the cursor position just to be on the safe side
         if (data.getCount() > 0) {
             data.moveToPosition(-1);
-            ((MyAdapter) adapter).swapCursor(data);
+            Cursor c = ((MyAdapter) adapter).swapCursor(data);
+
+            if (c != null) {
+                c.close();
+            }
         }
 
         if (data.getCount() != 0) showDataView();
@@ -198,7 +205,10 @@ public class MoviesFragment extends Fragment implements LoaderManager.LoaderCall
 
     @Override
     public void onLoaderReset(Loader<Cursor> loader) {
-        ((MyAdapter) adapter).swapCursor(null);
+        Cursor c = ((MyAdapter) adapter).swapCursor(null);
+        if (c != null) {
+            c.close();
+        }
     }
 
     public interface OnFragmentInteractionListener {
@@ -218,7 +228,6 @@ public class MoviesFragment extends Fragment implements LoaderManager.LoaderCall
     }
 
     private void fetchData() {
-        Log.d("MOBOESFRAG", "Fetching data");
         showLoading();
         PopularMoviesSyncAdapter.syncImmediately(getActivity());
     }
@@ -232,9 +241,17 @@ public class MoviesFragment extends Fragment implements LoaderManager.LoaderCall
             mContext = context;
         }
 
-        public void swapCursor(Cursor newCursor) {
+        /**
+         * Swap in the new Cursor and return the old one.
+         *
+         * @param newCursor
+         * @return - Old Cursor
+         */
+        public Cursor swapCursor(Cursor newCursor) {
+            Cursor oldCursor = mCursor;
             mCursor = newCursor;
             notifyDataSetChanged();
+            return oldCursor;
         }
 
         public Cursor getCursor() {
