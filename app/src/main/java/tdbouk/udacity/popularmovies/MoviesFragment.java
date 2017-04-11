@@ -21,6 +21,7 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ImageButton;
+import android.widget.ProgressBar;
 import android.widget.Spinner;
 
 import com.bumptech.glide.Glide;
@@ -53,6 +54,9 @@ public class MoviesFragment extends Fragment implements LoaderManager.LoaderCall
     private Spinner sortBySpinner;
     private int mSpinner_position = 0;
     private int mGridviewItemSelectedPosition = -1;
+
+    private ProgressBar mLoadingIndicator;
+
     private OnFragmentInteractionListener mListener;
 
     public MoviesFragment() {
@@ -108,6 +112,8 @@ public class MoviesFragment extends Fragment implements LoaderManager.LoaderCall
 
         View rootView = inflater.inflate(R.layout.fragment_main, container, false);
         moviesGridView = (RecyclerView) rootView.findViewById(R.id.movies);
+        mLoadingIndicator = (ProgressBar) rootView.findViewById(R.id.pb_loading_indicator);
+
 
         moviesGridView.setLayoutManager(new GridLayoutManager(getContext(), 4));
         adapter = new MyAdapter(getActivity());
@@ -119,6 +125,10 @@ public class MoviesFragment extends Fragment implements LoaderManager.LoaderCall
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         getLoaderManager().initLoader(MOVIE_LOADER, null, this);
+
+        PopularMoviesSyncAdapter.syncImmediately(getActivity());
+        showLoading();
+
         super.onActivityCreated(savedInstanceState);
 
         if (savedInstanceState != null) {
@@ -183,6 +193,8 @@ public class MoviesFragment extends Fragment implements LoaderManager.LoaderCall
             data.moveToPosition(-1);
             ((MyAdapter) adapter).swapCursor(data);
         }
+
+        if (data.getCount() != 0) showDataView();
     }
 
     @Override
@@ -195,6 +207,17 @@ public class MoviesFragment extends Fragment implements LoaderManager.LoaderCall
 
         void setDefaultMasterDetailView(Movie movie);
     }
+
+    private void showLoading() {
+        moviesGridView.setVisibility(View.INVISIBLE);
+        mLoadingIndicator.setVisibility(View.VISIBLE);
+    }
+
+    private void showDataView() {
+        mLoadingIndicator.setVisibility(View.INVISIBLE);
+        moviesGridView.setVisibility(View.VISIBLE);
+    }
+
 
     class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
 
@@ -302,8 +325,9 @@ public class MoviesFragment extends Fragment implements LoaderManager.LoaderCall
                 if (pos == 2) {
                     getMyFavoritesMovieList();
                 } else {
+                    showLoading();
                     PopularMoviesSyncAdapter.syncImmediately(getActivity());
-                    getLoaderManager().restartLoader(MOVIE_LOADER, null, MoviesFragment.this);
+//                    getLoaderManager().restartLoader(MOVIE_LOADER, null, MoviesFragment.this);
                 }
                 userSelect = false;
             }
