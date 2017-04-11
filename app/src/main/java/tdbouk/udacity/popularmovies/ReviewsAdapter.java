@@ -11,10 +11,6 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-/**
- * Created by toufik on 10/9/2016.
- */
-
 public class ReviewsAdapter extends ArrayAdapter<String> {
 
     private ArrayList<String> reviewsList;

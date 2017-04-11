@@ -68,7 +68,7 @@ public class PopularMoviesSyncAdapter extends AbstractThreadedSyncAdapter {
     private String openConnectionToUrl(URL url) {
         HttpURLConnection urlConnection = null;
         BufferedReader reader = null;
-        String moviesJsonStr = null;
+        String moviesJsonStr;
 
         try {
             // Create the request to MovieDb, and open the connection
@@ -106,6 +106,7 @@ public class PopularMoviesSyncAdapter extends AbstractThreadedSyncAdapter {
                 try {
                     reader.close();
                 } catch (final IOException e) {
+                    e.printStackTrace();
                     return null;
                 }
             }

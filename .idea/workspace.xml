@@ -6,6 +6,7 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="prior" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="BookmarkManager">
@@ -13,50 +14,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="941dd204-7c3b-4344-91ef-bd191fa13deb" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/animated_vector_drawable_24_2_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/appcompat_v7_24_2_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/espresso_core_2_2_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/espresso_idling_resource_2_2_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/exposed_instrumentation_api_publish_0_5.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/glide_3_7_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/hamcrest_core_1_3.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/hamcrest_integration_1_3.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/hamcrest_library_1_3.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/javawriter_2_1_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/javax_annotation_api_1_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/javax_inject_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/jsr305_2_0_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/junit_4_12.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/recyclerview_v7_24_2_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/rules_0_5.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/runner_0_5.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/support_annotations_24_2_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/support_compat_24_2_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/support_core_ui_24_2_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/support_core_utils_24_2_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/support_fragment_24_2_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/support_media_compat_24_2_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/support_v4_24_2_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/support_vector_drawable_24_2_1.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/cache.properties.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileHashes.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileSnapshots.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileSnapshotsToTreeSnapshotsIndex.bin" afterPath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileSnapshotsToTreeSnapshotsIndex.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/taskArtifacts.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/gradle.xml" afterPath="$PROJECT_DIR$/.idea/gradle.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/android-profile/profile-2017-04-11-07-52-18-939.rawproto" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileHashes.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileSnapshots.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.lock" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PopularMovies.iml" afterPath="$PROJECT_DIR$/PopularMovies.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build.gradle" afterPath="$PROJECT_DIR$/app/build.gradle" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/tdbouk/udacity/popularmovies/MoviesFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/tdbouk/udacity/popularmovies/MoviesFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_main.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_main.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gradle.properties" afterPath="$PROJECT_DIR$/gradle.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gradlew" afterPath="$PROJECT_DIR$/gradlew" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gradlew.bat" afterPath="$PROJECT_DIR$/gradlew.bat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/local.properties" afterPath="$PROJECT_DIR$/local.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/tdbouk/udacity/popularmovies/ReviewsAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/tdbouk/udacity/popularmovies/ReviewsAdapter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/tdbouk/udacity/popularmovies/sync/PopularMoviesSyncAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/tdbouk/udacity/popularmovies/sync/PopularMoviesSyncAdapter.java" />
     </list>
     <ignored path="PopularMovies.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -168,23 +137,10 @@
       <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/tdbouk/udacity/popularmovies/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
+            <state relative-caret-position="-462">
               <caret line="0" column="36" selection-start-line="0" selection-start-column="30" selection-end-line="0" selection-end-column="36" />
               <folding />
             </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AndroidManifest.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="66">
-              <caret line="12" column="40" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="android-manifest">
-            <state />
           </provider>
         </entry>
       </file>
@@ -198,62 +154,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ReviewsAdapter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/tdbouk/udacity/popularmovies/ReviewsAdapter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="80">
-              <caret line="46" column="58" selection-start-line="46" selection-start-column="58" selection-end-line="46" selection-end-column="58" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="MoviesFragment.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/tdbouk/udacity/popularmovies/MoviesFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="724">
-              <caret line="319" column="0" selection-start-line="319" selection-start-column="0" selection-end-line="319" selection-end-column="0" />
+            <state relative-caret-position="-26">
+              <caret line="230" column="41" selection-start-line="230" selection-start-column="41" selection-end-line="230" selection-end-column="41" />
               <folding>
-                <element signature="e#7073#7074#0" expanded="true" />
-                <element signature="e#7127#7128#0" expanded="true" />
                 <element signature="method#showLoading#0;class#MoviesFragment#0" expanded="false" />
                 <element signature="method#showDataView#0;class#MoviesFragment#0" expanded="false" />
-                <element signature="class#MyAdapter#0;class#MoviesFragment#0" expanded="false" />
+                <element signature="e#7905#7906#0" expanded="true" />
+                <element signature="e#7947#7948#0" expanded="true" />
                 <element signature="method#createMovieFromCursorItem#0;class#MyAdapter#0;class#MoviesFragment#0" expanded="false" />
                 <element signature="method#onCreateViewHolder#0;class#MyAdapter#0;class#MoviesFragment#0" expanded="false" />
                 <element signature="method#onBindViewHolder#0;class#MyAdapter#0;class#MoviesFragment#0" expanded="false" />
                 <element signature="method#getItemCount#0;class#MyAdapter#0;class#MoviesFragment#0" expanded="false" />
                 <element signature="class#ViewHolder#0;class#MyAdapter#0;class#MoviesFragment#0" expanded="false" />
+                <element signature="class#SpinnerInteractionListener#0;class#MoviesFragment#0" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PopularMoviesSyncAdapter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/tdbouk/udacity/popularmovies/sync/PopularMoviesSyncAdapter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4268">
-              <caret line="255" column="58" selection-start-line="255" selection-start-column="58" selection-end-line="255" selection-end-column="58" />
-              <folding>
-                <element signature="method#generateMovieTrailerUrl#0;class#PopularMoviesSyncAdapter#0" expanded="false" />
-                <element signature="method#configurePeriodicSync#0;class#PopularMoviesSyncAdapter#0" expanded="false" />
-                <element signature="docComment;method#syncImmediately#0;class#PopularMoviesSyncAdapter#0" expanded="false" />
-                <element signature="docComment;method#getSyncAccount#0;class#PopularMoviesSyncAdapter#0" expanded="false" />
-                <element signature="method#onAccountCreated#0;class#PopularMoviesSyncAdapter#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="activity_main.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout-sw600dp/activity_main.xml">
-          <provider editor-type-id="android-designer2">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="67">
-              <caret line="16" column="34" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -2074,12 +1991,12 @@
         <option value="$PROJECT_DIR$/app/src/main/java/tdbouk/udacity/popularmovies/MainActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_detail.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/tdbouk/udacity/popularmovies/DetailFragment.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/tdbouk/udacity/popularmovies/ReviewsAdapter.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/tdbouk/udacity/popularmovies/sync/PopularMoviesSyncAdapter.java" />
         <option value="$PROJECT_DIR$/app/build.gradle" />
         <option value="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" />
         <option value="$PROJECT_DIR$/gradle.properties" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_main.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/tdbouk/udacity/popularmovies/sync/PopularMoviesSyncAdapter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/tdbouk/udacity/popularmovies/ReviewsAdapter.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/tdbouk/udacity/popularmovies/MoviesFragment.java" />
       </list>
     </option>
@@ -2264,7 +2181,7 @@
       <recent name="D:\Programming-workspace\android\Udacity-Android\PopularMovies\app\src\main\res\drawable" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.PopularMovies:app [clean]">
+  <component name="RunManager" selected="Gradle.PopularMovies [clean]">
     <configuration default="false" name="PopularMovies:app [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -2613,8 +2530,8 @@
     </list>
     <recent_temporary>
       <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="Gradle.PopularMovies:app [clean]" />
-        <item index="1" class="java.lang.String" itemvalue="Gradle.PopularMovies [clean]" />
+        <item index="0" class="java.lang.String" itemvalue="Gradle.PopularMovies [clean]" />
+        <item index="1" class="java.lang.String" itemvalue="Gradle.PopularMovies:app [clean]" />
         <item index="2" class="java.lang.String" itemvalue="Gradle.PopularMovies:app [build]" />
       </list>
     </recent_temporary>
@@ -2693,7 +2610,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32508835" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -3075,33 +2992,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="12" column="40" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-manifest">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gradle.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="14" column="47" selection-start-line="14" selection-start-column="47" selection-end-line="14" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/tdbouk/udacity/popularmovies/ReviewsAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="46" column="58" selection-start-line="46" selection-start-column="58" selection-end-line="46" selection-end-column="58" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout-sw600dp/activity_main.xml">
       <provider editor-type-id="android-designer2">
         <state />
@@ -3143,20 +3033,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/tdbouk/udacity/popularmovies/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="36" selection-start-line="0" selection-start-column="30" selection-end-line="0" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/tdbouk/udacity/popularmovies/sync/PopularMoviesSyncAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4268">
-          <caret line="255" column="58" selection-start-line="255" selection-start-column="58" selection-end-line="255" selection-end-column="58" />
+        <state relative-caret-position="327">
+          <caret line="273" column="41" selection-start-line="273" selection-start-column="41" selection-end-line="273" selection-end-column="41" />
           <folding>
+            <element signature="method#generateTheMobieDbUrl#0;class#PopularMoviesSyncAdapter#0" expanded="false" />
             <element signature="method#generateMovieTrailerUrl#0;class#PopularMoviesSyncAdapter#0" expanded="false" />
+            <element signature="method#generateMovieReviewUrl#0;class#PopularMoviesSyncAdapter#0" expanded="false" />
             <element signature="method#configurePeriodicSync#0;class#PopularMoviesSyncAdapter#0" expanded="false" />
             <element signature="docComment;method#syncImmediately#0;class#PopularMoviesSyncAdapter#0" expanded="false" />
             <element signature="docComment;method#getSyncAccount#0;class#PopularMoviesSyncAdapter#0" expanded="false" />
@@ -3165,21 +3049,56 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/tdbouk/udacity/popularmovies/ReviewsAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="65" column="9" selection-start-line="65" selection-start-column="9" selection-end-line="65" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="12" column="40" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-manifest">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/tdbouk/udacity/popularmovies/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-462">
+          <caret line="0" column="36" selection-start-line="0" selection-start-column="30" selection-end-line="0" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gradle.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="14" column="47" selection-start-line="14" selection-start-column="47" selection-end-line="14" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/tdbouk/udacity/popularmovies/MoviesFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="724">
-          <caret line="319" column="0" selection-start-line="319" selection-start-column="0" selection-end-line="319" selection-end-column="0" />
+        <state relative-caret-position="-26">
+          <caret line="230" column="41" selection-start-line="230" selection-start-column="41" selection-end-line="230" selection-end-column="41" />
           <folding>
-            <element signature="e#7073#7074#0" expanded="true" />
-            <element signature="e#7127#7128#0" expanded="true" />
             <element signature="method#showLoading#0;class#MoviesFragment#0" expanded="false" />
             <element signature="method#showDataView#0;class#MoviesFragment#0" expanded="false" />
-            <element signature="class#MyAdapter#0;class#MoviesFragment#0" expanded="false" />
+            <element signature="e#7905#7906#0" expanded="true" />
+            <element signature="e#7947#7948#0" expanded="true" />
             <element signature="method#createMovieFromCursorItem#0;class#MyAdapter#0;class#MoviesFragment#0" expanded="false" />
             <element signature="method#onCreateViewHolder#0;class#MyAdapter#0;class#MoviesFragment#0" expanded="false" />
             <element signature="method#onBindViewHolder#0;class#MyAdapter#0;class#MoviesFragment#0" expanded="false" />
             <element signature="method#getItemCount#0;class#MyAdapter#0;class#MoviesFragment#0" expanded="false" />
             <element signature="class#ViewHolder#0;class#MyAdapter#0;class#MoviesFragment#0" expanded="false" />
+            <element signature="class#SpinnerInteractionListener#0;class#MoviesFragment#0" expanded="false" />
           </folding>
         </state>
       </provider>

@@ -11,6 +11,7 @@ import android.support.v4.content.Loader;
 import android.support.v4.view.MenuItemCompat;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -125,9 +126,7 @@ public class MoviesFragment extends Fragment implements LoaderManager.LoaderCall
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         getLoaderManager().initLoader(MOVIE_LOADER, null, this);
-
-        PopularMoviesSyncAdapter.syncImmediately(getActivity());
-        showLoading();
+        fetchData();
 
         super.onActivityCreated(savedInstanceState);
 
@@ -218,6 +217,11 @@ public class MoviesFragment extends Fragment implements LoaderManager.LoaderCall
         moviesGridView.setVisibility(View.VISIBLE);
     }
 
+    private void fetchData() {
+        Log.d("MOBOESFRAG", "Fetching data");
+        showLoading();
+        PopularMoviesSyncAdapter.syncImmediately(getActivity());
+    }
 
     class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
 
@@ -325,9 +329,7 @@ public class MoviesFragment extends Fragment implements LoaderManager.LoaderCall
                 if (pos == 2) {
                     getMyFavoritesMovieList();
                 } else {
-                    showLoading();
-                    PopularMoviesSyncAdapter.syncImmediately(getActivity());
-//                    getLoaderManager().restartLoader(MOVIE_LOADER, null, MoviesFragment.this);
+                    fetchData();
                 }
                 userSelect = false;
             }
