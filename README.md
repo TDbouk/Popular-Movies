@@ -2,6 +2,9 @@
 An Android app that shows a list of movies movies fetched from The Movie DB API. The movies are shown in grid view using a Recycler View with an option to sort movies according to "most popular" or "highest rated". Each item is clickable and moves the user to a detail screen showing detail about the selected movie such as description, data of release, rating. The user also has the option to view trailers and read reviews. In addition, the user can sav his favorite movies to a local database.   
 The app is also optimized for tablets using a Master/Detail approach. 
 
+## Screenshots
+![screenshot1](screenshots/popular%20movies.png)
+
 ## Getting Started
 The below instruction will get you a copy of the project up and running on your machine for development and testing purposes.
 
@@ -23,6 +26,9 @@ In the gradle.properties file, substiute the value of **'MyMovieDbKey'** with yo
 [Android Studio](https://developer.android.com/studio/index.html) - The IDE used  
 [Gradle](https://gradle.org/) - Dependency Management  
 [The Movie Database](https://www.themoviedb.org/) - The used API for fetching movies
+
+### Libraries Used
+[Glide](https://github.com/bumptech/glide)  
 
 ### Contributing 
 Pull requests are gracefully accepted. 
