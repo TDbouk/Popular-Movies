@@ -3,8 +3,11 @@ An Android app that shows a list of movies movies fetched from The Movie DB API.
 The app is also optimized for tablets using a Master/Detail approach. 
 
 ## Screenshots
-![screenshot1](screenshots/popular%20movies.png)
+### Tablet UI ###
 
+<img src="screenshots/popular%20movies.png">
+
+### Phone UI ###   
 <img src="screenshots/popularmovies_2.png" width="250">  <img src="screenshots/popularmovies_3.png" width="250">
 
 ## Getting Started
