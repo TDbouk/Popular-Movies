@@ -5,6 +5,8 @@ The app is also optimized for tablets using a Master/Detail approach.
 ## Screenshots
 ![screenshot1](screenshots/popular%20movies.png)
 
+<img src="screenshots/popularmovies_2.png" width="250">  <img src="screenshots/popularmovies_3.png" width="250">
+
 ## Getting Started
 The below instruction will get you a copy of the project up and running on your machine for development and testing purposes.
 
